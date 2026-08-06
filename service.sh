@@ -5,6 +5,7 @@ done
 echo always_on > /sys/devices/platform/13000000.mali/power_policy
 echo 1 > /sys/devices/platform/13000000.mali/js_ctx_scheduling_mode
 echo 25 > /sys/devices/platform/13000000.mali/dvfs_period
+echo 0x3 > /sys/devices/platform/13000000.mali/core_mask
 echo 25 > /sys/devices/platform/13000000.mali/js_scheduling_period
 echo 5000 > /sys/devices/platform/13000000.mali/soft_job_timeout
 echo 3000 > /sys/devices/platform/13000000.mali/reset_timeout
@@ -31,3 +32,4 @@ echo 32 > /proc/sys/kernel/sched_nr_migrate
 echo 0 > /proc/mtk_lpm/lpm/rc/dram/enable
 echo 0 > /proc/mtk_lpm/lpm/rc/syspll/enable
 echo 0 > /proc/mtk_lpm/lpm/rc/bus26m/enable
+echo 0 > /proc/mtk_lpm/lpm/rc/cpu-buck-ldo/enable
